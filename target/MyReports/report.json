@@ -1,0 +1,113 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-28T11:20:10.840Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.setUp_urL()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search a Product",
+        "description": "",
+        "id": "naveen-automation-lab-application-feature;search-a-product",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown_closed()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyHooks.AmazonHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1005000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have search field on Amazon Page",
+            "match": {
+              "location": "stepDefinitions.SearchSteps.i_have_search_field_on_amazon_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1941100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for product with name \"Mac Book Pro\" and price 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mac Book Pro\"",
+                  "offset": 31
+                },
+                {
+                  "val": "1000",
+                  "offset": 56
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.i_search_for_product_with_name_and_price(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1421000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Product with name \"Mac Book Pro\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mac Book Pro\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.SearchSteps.product_with_name_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Naveen Automation Lab Application feature",
+    "description": "",
+    "id": "naveen-automation-lab-application-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppsFeature/Search.feature",
+    "tags": []
+  }
+]
